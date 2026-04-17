@@ -40,6 +40,24 @@
       "matchManagers": ["mise"],
       "matchPackageNames": ["astral-sh/*"],
       "minimumReleaseAge": null
+    },
+    {
+      "description": "No minimum release age for iwamot's own packages",
+      "matchSourceUrls": ["https://github.com/iwamot/**"],
+      "minimumReleaseAge": null
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Track mise tasks shared via git:: includes (?ref=vX.Y.Z)",
+      "managerFilePatterns": [
+        "/(^|/)mise\\.toml$/"
+      ],
+      "matchStrings": [
+        "git::https://github\\.com/(?<depName>[^/]+/[^/]+)\\.git//[^?]+\\?ref=(?<currentValue>v[\\d.]+)"
+      ],
+      "datasourceTemplate": "github-tags"
     }
   ]
 }
