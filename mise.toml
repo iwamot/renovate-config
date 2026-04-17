@@ -1,0 +1,11 @@
+min_version = "2026.4.8"
+
+[settings]
+install_before = "1d"
+
+[tools]
+"aqua:rhysd/actionlint" = "1.7.12"
+"aqua:suzuki-shunsuke/ghalint" = "1.5.5"
+"aqua:suzuki-shunsuke/pinact" = "3.9.0"
+"aqua:zizmorcore/zizmor" = "1.24.1"
+"npm:renovate" = "43.123.5"
