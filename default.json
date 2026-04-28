@@ -58,6 +58,18 @@
         "git::https://github\\.com/(?<depName>[^/]+/[^/]+)\\.git//[^?]+\\?ref=(?<currentValue>v[\\d.]+)"
       ],
       "datasourceTemplate": "github-tags"
+    },
+    {
+      "customType": "regex",
+      "description": "Track GitHub Actions runners declared in matrix include entries",
+      "managerFilePatterns": [
+        "/(^|/)(workflow-templates|\\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\\.ya?ml$/",
+        "/(^|/)action\\.ya?ml$/"
+      ],
+      "matchStrings": [
+        "runner:\\s*(?<depName>ubuntu)-(?<currentValue>\\d{2}\\.\\d{2})(?:-arm)?\\b"
+      ],
+      "datasourceTemplate": "github-runners"
     }
   ]
 }
