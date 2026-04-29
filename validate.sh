@@ -8,6 +8,7 @@ mise install
 
 # Shared lint tasks
 mise run gha-lint
+mise run shell-lint
 
 # Renovate
 renovate-config-validator --strict default.json
