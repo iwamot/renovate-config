@@ -4,7 +4,7 @@ min_version = "2026.4.8"
 install_before = "1d"
 
 [tools]
-"npm:renovate" = "43.149.0"
+"npm:renovate" = "43.150.0"
 
 [task_config]
 includes = [
