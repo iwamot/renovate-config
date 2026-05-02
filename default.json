@@ -37,8 +37,7 @@
     },
     {
       "description": "No minimum release age for astral-sh packages",
-      "matchManagers": ["mise"],
-      "matchPackageNames": ["astral-sh/*"],
+      "matchSourceUrls": ["https://github.com/astral-sh/**"],
       "minimumReleaseAge": null
     },
     {
