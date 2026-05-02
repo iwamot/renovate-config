@@ -4,6 +4,7 @@ min_version = "2026.4.8"
 install_before = "1d"
 
 [tools]
+node = "24.15.0"
 "npm:renovate" = "43.150.0"
 
 [task_config]
