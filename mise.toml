@@ -5,7 +5,7 @@ install_before = "1d"
 
 [tools]
 node = "24.16.0"
-"npm:renovate" = "43.202.0"
+"npm:renovate" = "43.202.1"
 
 [task_config]
 includes = [
