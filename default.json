@@ -36,11 +36,6 @@
       "versioning": "node"
     },
     {
-      "description": "No minimum release age for astral-sh packages",
-      "matchSourceUrls": ["https://github.com/astral-sh/**"],
-      "minimumReleaseAge": null
-    },
-    {
       "description": "No minimum release age for iwamot's own packages",
       "matchSourceUrls": ["https://github.com/iwamot/**"],
       "minimumReleaseAge": null
