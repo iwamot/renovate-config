@@ -1,10 +1,14 @@
-min_version = "2026.4.8"
+min_version = "2026.6.3"
 
 [settings]
-install_before = "1d"
+npm.package_manager = "aube"
+
+[env]
+AUBE_TRUST_POLICY_EXCLUDE = "@yarnpkg/libzip@3.2.2"
 
 [tools]
 node = "24.16.0"
+"aqua:jdx/aube" = "1.18.1"
 "npm:renovate" = "43.220.0"
 
 [task_config]
