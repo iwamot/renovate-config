@@ -10,7 +10,7 @@ AUBE_TRUST_POLICY_EXCLUDE = "@yarnpkg/libzip@3.2.2"
 [tools]
 node = "24.18.0"
 "aqua:jdx/aube" = "1.32.0"
-"npm:renovate" = "43.275.1"
+"npm:renovate" = "43.275.2"
 
 [task_config]
 includes = [
