@@ -1,5 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": [
+    "`security:minimumReleaseAgeNpm` is ignored so that every datasource waits the same one day.",
+    "One day is what the installers already enforce on their own — aube defaults to `minimumReleaseAge=1440` and mise carries the same setting — so a shorter window here would only raise pull requests that fail at install time.",
+    "Raising it for npm alone would not buy protection either, since a local `aube add` still resolves at one day. Raise the installers together with this if it ever needs to be stricter."
+  ],
   "extends": [
     "config:best-practices",
     "customManagers:dockerfileVersions",
