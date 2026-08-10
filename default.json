@@ -44,6 +44,17 @@
       "description": "No minimum release age for iwamot's own packages",
       "matchSourceUrls": ["https://github.com/iwamot/**"],
       "minimumReleaseAge": null
+    },
+    {
+      "description": [
+        "Read Biome's version out of its tag names.",
+        "The mise manager's aqua backend does not consult the aqua registry, so it queries `github-tags` with a fixed `^v?(?<version>.+)` regardless of how the upstream tags its releases. Biome tags releases as `@biomejs/biome@X.Y.Z`, which that regex carries through whole, leaving nothing that parses as a version and no update ever proposed.",
+        "The trailing anchor keeps the sibling `@biomejs/js-api@` and the retired `cli/v` tags out."
+      ],
+      "matchManagers": ["mise"],
+      "matchDatasources": ["github-tags"],
+      "matchPackageNames": ["biomejs/biome"],
+      "extractVersion": "^@biomejs/biome@(?<version>.+)$"
     }
   ],
   "customManagers": [
