@@ -5,7 +5,7 @@ lockfile = true
 npm.package_manager = "aube"
 
 [env]
-AUBE_TRUST_POLICY_EXCLUDE = "@yarnpkg/libzip@3.2.2"
+AUBE_TRUST_POLICY_EXCLUDE = "@yarnpkg/libzip@3.2.2,@smithy/core@3.33.0,@smithy/node-http-handler@4.11.0"
 
 [tools]
 node = "24.19.0"
