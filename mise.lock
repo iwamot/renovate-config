@@ -438,3 +438,6 @@ url = "https://nodejs.org/dist/v24.19.0/node-v24.19.0-win-x64.zip"
 [[tools."npm:renovate"]]
 version = "44.30.3"
 backend = "npm:renovate"
+
+[tools."npm:renovate".options]
+trust_policy_excludes = '["@smithy/core@3.33.0", "@smithy/node-http-handler@4.11.0", "@yarnpkg/libzip@3.2.2"]'
