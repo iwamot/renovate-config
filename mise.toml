@@ -8,7 +8,7 @@ npm.package_manager = "aube"
 locked = true
 
 [tools]
-node = "24.19.0"
+node = "24.20.0"
 "aqua:jdx/aube" = "2.2.0"
 
 # Manually published releases that carry no provenance. mise drives aube
