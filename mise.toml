@@ -15,7 +15,7 @@ node = "24.20.0"
 # through its embedder API, so an AUBE_* environment variable does not reach
 # this install; the exclusions belong to the tool that pulls them in.
 [tools."npm:renovate"]
-version = "44.48.1"
+version = "44.50.3"
 trust_policy_excludes = [
   "@yarnpkg/libzip@3.2.2",
   "@smithy/core@3.33.0",
