@@ -91,16 +91,6 @@
       "matchStrings": [
         "# renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[^\\s]+/[^\\s]+@(?<currentValue>[^\\s]+)"
       ]
-    },
-    {
-      "customType": "regex",
-      "description": "Track a version stated in Markdown, annotated the customManagers:mavenPropertyVersions way and written in a code span",
-      "managerFilePatterns": [
-        "/\\.md$/"
-      ],
-      "matchStrings": [
-        "<!-- renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+-->\\s*`(?<currentValue>[^`]+?)`"
-      ]
     }
   ]
 }
