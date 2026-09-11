@@ -9,7 +9,7 @@ locked = true
 
 [tools]
 node = "24.21.0"
-"aqua:jdx/aube" = "2.2.12"
+"aqua:jdx/aube" = "2.2.13"
 
 # Manually published releases that carry no provenance. mise drives aube
 # through its embedder API, so an AUBE_* environment variable does not reach
