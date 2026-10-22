@@ -450,9 +450,9 @@ checksum = "sha256:d2046d28c2c3dcd211ac5145c0bf30e2047ef9dfb306693c8c6e2eccd8b95
 url = "https://nodejs.org/dist/v24.22.1/node-v24.22.1-win-x64.zip"
 
 [[tools."npm:renovate"]]
-version = "44.172.0"
+version = "44.172.2"
 backend = "npm:renovate"
-specifiers = ["44.172.0"]
+specifiers = ["44.172.2"]
 
 [tools."npm:renovate".options]
 trust_policy_excludes = '["@smithy/core@3.33.0", "@smithy/node-http-handler@4.11.0", "@yarnpkg/libzip@3.2.2"]'
