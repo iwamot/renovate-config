@@ -19,12 +19,14 @@
     ":prHourlyLimitNone",
     ":semanticCommits"
   ],
-  "ignorePresets": [
-    "security:minimumReleaseAgeNpm",
-    ":maintainLockFilesWeekly"
-  ],
+  "ignorePresets": ["security:minimumReleaseAgeNpm"],
   "minimumReleaseAge": "1 day",
   "minimumReleaseAgeBehaviour": "timestamp-optional",
+  "timezone": "Asia/Tokyo",
+  "lockFileMaintenance": {
+    "description": "Callers run Renovate every twelve hours, so the window is a whole day rather than the few early-Monday hours (UTC) of `:maintainLockFilesWeekly`.",
+    "schedule": ["* * * * 0"]
+  },
   "vulnerabilityAlerts": {
     "enabled": true,
     "minimumReleaseAge": null
