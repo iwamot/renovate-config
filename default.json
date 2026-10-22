@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": [
     "`security:minimumReleaseAgeNpm` is ignored so that every datasource that reports release timestamps waits the same one day.",
-    "One day is what the toolchain already holds to on its own: aube's `minimumReleaseAge` defaults to 1440 minutes and mise's to 24h. A shorter window here would propose versions their resolvers quietly decline to take, leaving lockfiles that a frozen install then rejects.",
+    "One day is what the repositories set for their package managers: `minimumReleaseAge: 1440` in `pnpm-workspace.yaml` (read by aube and by the pnpm that Renovate runs), `exclude-newer = \"1 day\"` for uv and `minimum_release_age = \"1d\"` for mise. A shorter window here would propose versions their resolvers decline to take, leaving lockfiles that a frozen install then rejects.",
     "Raising it for npm alone would not buy protection either, since a local `aube add` still resolves at one day. Raise the package managers together with this if it ever needs to be stricter.",
     "With `timestamp-optional`, an update that carries no release timestamp is proposed without waiting. The Docker datasource takes timestamps only from Docker Hub, so updates to images on other registries are not delayed, and neither are `pin` updates."
   ],
