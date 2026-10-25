@@ -24,8 +24,11 @@
   "minimumReleaseAgeBehaviour": "timestamp-optional",
   "timezone": "Asia/Tokyo",
   "lockFileMaintenance": {
-    "description": "Callers run Renovate every twelve hours, so the window is a whole day rather than the few early-Monday hours (UTC) of `:maintainLockFilesWeekly`.",
-    "schedule": ["* * * * 0"]
+    "description": [
+      "Turns off the weekly refresh that `config:best-practices` enables through `:maintainLockFilesWeekly`. Transitive dependencies move only with the direct ones that need them, and a daily scheduled validate run catches advisories through each repository's audit (uv audit, aube audit, govulncheck).",
+      "Renovate regenerates whole lockfiles with its own toolchain: it has no aube support and writes `pnpm-lock.yaml` with pnpm, and a refresh of `mise.lock` under another mise version dropped the tools that the shared mise-tasks declare."
+    ],
+    "enabled": false
   },
   "vulnerabilityAlerts": {
     "enabled": true,
