@@ -95,6 +95,36 @@
         "patch"
       ],
       "groupName": "bun"
+    },
+    {
+      "description": "Leave generated native dependency sidecars to mise lock",
+      "matchFileNames": [
+        "**/.mise/locks/**"
+      ],
+      "enabled": false
+    },
+    {
+      "description": "Refresh tool locks when the shared mise task ref changes",
+      "matchManagers": [
+        "custom.regex"
+      ],
+      "matchPackageNames": [
+        "iwamot/mise-tasks"
+      ],
+      "postUpgradeTasks": {
+        "commands": [
+          "mise trust mise.toml",
+          "mise lock"
+        ],
+        "executionMode": "branch",
+        "installTools": {
+          "mise": {}
+        },
+        "fileFilters": [
+          "mise.lock",
+          ".mise/locks/**"
+        ]
+      }
     }
   ],
   "customManagers": [
