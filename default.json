@@ -61,6 +61,40 @@
       "matchDatasources": ["github-tags"],
       "matchPackageNames": ["biomejs/biome"],
       "extractVersion": "^@biomejs/biome@(?<version>.+)$"
+    },
+    {
+      "description": "Update local and container uv together",
+      "matchManagers": [
+        "mise",
+        "dockerfile"
+      ],
+      "matchPackageNames": [
+        "astral-sh/uv",
+        "dhi.io/uv"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch"
+      ],
+      "groupName": "uv"
+    },
+    {
+      "description": "Update the Bun runtime and its API types together",
+      "matchManagers": [
+        "mise",
+        "npm"
+      ],
+      "matchPackageNames": [
+        "oven-sh/bun",
+        "@types/bun"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch"
+      ],
+      "groupName": "bun"
     }
   ],
   "customManagers": [
