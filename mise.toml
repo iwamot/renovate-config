@@ -6,9 +6,6 @@ lockfile = true
 minimum_release_age = "1d"
 npm.package_manager = "aube"
 
-[tool_config]
-locked = true
-
 [tools]
 node = "24.22.1"
 "aqua:aubepkg/aube" = "2.8.2"
