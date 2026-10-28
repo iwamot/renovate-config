@@ -104,6 +104,26 @@
       "enabled": false
     },
     {
+      "description": "Refresh all tool locks after mise dependency updates",
+      "matchManagers": [
+        "mise"
+      ],
+      "postUpgradeTasks": {
+        "commands": [
+          "mise trust mise.toml",
+          "mise lock"
+        ],
+        "executionMode": "branch",
+        "installTools": {
+          "mise": {}
+        },
+        "fileFilters": [
+          "mise.lock",
+          ".mise/locks/**"
+        ]
+      }
+    },
+    {
       "description": "Refresh tool locks when the shared mise task ref changes",
       "matchManagers": [
         "custom.regex"
