@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       renovate:
-        specifier: 44.190.2
-        version: 44.190.2(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.191.0
+        version: 44.191.0(supports-color@7.2.0)(typanion@3.14.0)
 
 packages:
 
@@ -481,12 +481,12 @@ packages:
     resolution: {integrity: sha512-FBLawccaWOPwqXgMSB3FTp1VTfGJWSTTXY2Q3kWPoLYOpKYBr3V37vtqFLjb5wUFkrXN2Sj+S840JXKfHwy8Rg==}
     engines: {node: '>=22.12.0', pnpm: '>=10.0.0'}
 
-  '@renovatebot/osv-offline-db@4.1.2':
-    resolution: {integrity: sha512-zCMxjLZeYzPS75OuMe+Ch8/lAY7gDGCalTtzeMkOpJydF4tZx+aKJNHr1F2ApTQXoeei1HD4D+wvR57MidqidQ==}
+  '@renovatebot/osv-offline-db@4.2.0':
+    resolution: {integrity: sha512-1qUj7k3abBDWp8HAa19lcON9+x8y3jpFBcxX0ILVLsb22H9zBqb7wArgdcNGsinRyjfZwjFyqND8X1fnT4rS3A==}
     engines: {node: '>=24.11.0', pnpm: '>=10.0.0'}
 
-  '@renovatebot/osv-offline@4.1.2':
-    resolution: {integrity: sha512-ZQla9Zj0W7zKqkeI2GZwT56teLJD9rt5//hTGiu6YjjT4G97ZUWj9pTZtQZAFJ8E425hLuUHRSeffJqDEUsMwQ==}
+  '@renovatebot/osv-offline@4.2.0':
+    resolution: {integrity: sha512-v40WN0SE4erjV6sBDlzIT9yGIzhQQGoqlKAoQrRV2v0bDY26O34K3b1TOl62QEc1x7MUXqMOM4352cegQOrbyg==}
     engines: {node: '>=24.11.0', pnpm: '>=10.0.0'}
 
   '@renovatebot/pep440@5.0.1':
@@ -1932,8 +1932,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.190.2:
-    resolution: {integrity: sha512-E/QW1qJaa3UkcpLqGr8B4/AOPLajlTpEYSgk934/aOmEsAJsvGDPiVhWjreBykmGm24AT6d2Suis7GlWzZFVYg==}
+  renovate@44.191.0:
+    resolution: {integrity: sha512-S1q6YrA8/MK2THwf+xJCZEi653sID4TWOYH+o+av0K1y5ZvBHJNPf6iTbcl9ivpxxfysdCfTrZu+M0PG5G9PuA==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -2987,15 +2987,15 @@ snapshots:
       klona: 2.0.6
       moo: 0.5.3
 
-  '@renovatebot/osv-offline-db@4.1.2(supports-color@7.2.0)':
+  '@renovatebot/osv-offline-db@4.2.0(supports-color@7.2.0)':
     dependencies:
       debug: 4.4.3(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
-  '@renovatebot/osv-offline@4.1.2(supports-color@7.2.0)':
+  '@renovatebot/osv-offline@4.2.0(supports-color@7.2.0)':
     dependencies:
-      '@renovatebot/osv-offline-db': 4.1.2(supports-color@7.2.0)
+      '@renovatebot/osv-offline-db': 4.2.0(supports-color@7.2.0)
       debug: 4.4.3(supports-color@7.2.0)
       fs-extra: 11.4.1
       got: 15.1.0
@@ -4689,7 +4689,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.190.2(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.191.0(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -4725,7 +4725,7 @@ snapshots:
       '@renovatebot/base-image': 13.145.4(zod@4.6.7)
       '@renovatebot/detect-tools': 4.0.23
       '@renovatebot/good-enough-parser': 2.0.1
-      '@renovatebot/osv-offline': 4.1.2(supports-color@7.2.0)
+      '@renovatebot/osv-offline': 4.2.0(supports-color@7.2.0)
       '@renovatebot/pep440': 5.0.1
       '@renovatebot/pgp': 2.0.4
       '@renovatebot/ruby-semver': 5.0.0
