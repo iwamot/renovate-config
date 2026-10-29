@@ -8,7 +8,7 @@ npm.package_manager = "aube"
 
 [tools]
 node = "24.22.2"
-"aqua:aubepkg/aube" = "2.8.3"
+"aqua:aubepkg/aube" = "2.8.4"
 
 # Manually published releases that carry no provenance. mise drives aube
 # through its embedder API, so an AUBE_* environment variable does not reach
