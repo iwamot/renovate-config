@@ -7,7 +7,7 @@ minimum_release_age = "1d"
 npm.package_manager = "aube"
 
 [tools]
-node = "24.22.2"
+node = "26.13.0"
 "aqua:aubepkg/aube" = "2.8.4"
 
 # Manually published releases that carry no provenance. mise drives aube
