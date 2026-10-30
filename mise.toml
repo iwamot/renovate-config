@@ -14,7 +14,7 @@ node = "26.13.0"
 # through its embedder API, so an AUBE_* environment variable does not reach
 # this install; the exclusions belong to the tool that pulls them in.
 [tools."npm:renovate"]
-version = "44.192.2"
+version = "44.196.0"
 # RE2 needs its install script to provide the native regex engine.
 allow_builds = ["re2"]
 trust_policy_excludes = [
