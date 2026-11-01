@@ -17,11 +17,7 @@ node = "26.13.0"
 version = "44.198.3"
 # RE2 needs its install script to provide the native regex engine.
 allow_builds = ["re2"]
-trust_policy_excludes = [
-  "@yarnpkg/libzip@3.2.2",
-  "@smithy/core@3.33.0",
-  "@smithy/node-http-handler@4.11.0",
-]
+trust_policy_excludes = ["@yarnpkg/libzip@3.2.2"]
 
 [task_config]
 includes = [
