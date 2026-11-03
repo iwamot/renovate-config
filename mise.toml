@@ -11,7 +11,7 @@ locked = true
 
 [tools]
 node = "26.13.0"
-"aqua:aubepkg/aube" = "2.8.5"
+"aqua:aubepkg/aube" = "2.9.0"
 
 # Manually published releases that carry no provenance. mise drives aube
 # through its embedder API, so an AUBE_* environment variable does not reach
