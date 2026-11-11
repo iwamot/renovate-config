@@ -24,5 +24,5 @@ trust_policy_excludes = ["@yarnpkg/libzip@3.2.2"]
 
 [task_config]
 includes = [
-  "git::https://github.com/iwamot/mise-tasks.git//.mise/tasks?ref=v3.5.0",
+  "git::https://github.com/iwamot/mise-tasks.git//.mise/tasks?ref=v3.5.1",
 ]
