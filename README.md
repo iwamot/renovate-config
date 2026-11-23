@@ -21,7 +21,7 @@ In your repository's `.github/renovate.json`:
 
 ## Shared mise task updates
 
-Updates to `iwamot/mise-tasks` git includes also refresh `mise.lock` and native dependency sidecars in the same PR. The post-upgrade task installs mise using the repository's `constraints.mise` and uv (which `mise lock` needs to record a pipx tool's dependency graph), trusts the root `mise.toml`, and runs `mise lock`; existing locked platforms are retained. This includes task-header tools such as pinact and gh without declaring them again in every caller.
+Updates to `iwamot/mise-tasks` git includes also refresh `mise.lock` and native dependency sidecars in the same PR. The post-upgrade task installs mise using the repository's `constraints.mise` and uv, after the Python it is installed with (`mise lock` needs uv to record a pipx tool's dependency graph), trusts the root `mise.toml`, and runs `mise lock`; existing locked platforms are retained. This includes task-header tools such as pinact and gh without declaring them again in every caller.
 
 Self-hosted Renovate must allow exactly `mise trust mise.toml` and `mise lock` through `allowedCommands`. `iwamot/workflows` supplies this allowlist and derives `constraints.mise` from the caller's `min_version`. Direct tool updates continue to use Renovate's native mise manager.
 
