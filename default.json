@@ -104,7 +104,7 @@
       "enabled": false
     },
     {
-      "description": "Refresh all tool locks after mise dependency updates",
+      "description": "Refresh all tool locks after mise dependency updates. mise lock needs uv on PATH to record a pipx tool's dependency graph, and writes the lock without it otherwise",
       "matchManagers": [
         "mise"
       ],
@@ -115,7 +115,8 @@
         ],
         "executionMode": "branch",
         "installTools": {
-          "mise": {}
+          "mise": {},
+          "uv": {}
         },
         "fileFilters": [
           "mise.lock",
@@ -138,7 +139,8 @@
         ],
         "executionMode": "branch",
         "installTools": {
-          "mise": {}
+          "mise": {},
+          "uv": {}
         },
         "fileFilters": [
           "mise.lock",
